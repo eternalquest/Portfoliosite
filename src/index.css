@@ -1,0 +1,127 @@
+/* Palette: White + Slate Grey (professional, calm) */
+:root{
+  --bg: #ffffff;
+  --panel: #f7f7f9;
+  --muted: #6b7280;
+  --text: #0f1724;
+  --accent: #2b6cb0;     /* steel-blue */
+  --accent-2: #0f1724;   /* dark */
+  --radius: 12px;
+  --container: 1120px;
+  --glass: rgba(15,23,36,0.03);
+  --shadow: 0 10px 30px rgba(15,23,36,0.06);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Reset & base */
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+  font-size:16px;
+}
+
+/* Container */
+.container{
+  width:100%;
+  max-width:var(--container);
+  margin:0 auto;
+  padding:0 20px;
+}
+
+/* NAV */
+.nav{
+  width:100%;
+  background:linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.95));
+  border-bottom:1px solid rgba(15,23,36,0.06);
+  position:sticky;
+  top:0;
+  z-index:60;
+  backdrop-filter: blur(6px);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0;}
+.brand{display:flex;gap:14px;align-items:center}
+.logo{
+  width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#4f8fd1);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:16px;
+  box-shadow: var(--shadow);
+}
+.brand-name{font-weight:700}
+.brand-tag{font-size:13px;color:var(--muted)}
+
+/* Nav links */
+.nav-links{display:flex;gap:20px;align-items:center}
+.nav-links a{color:var(--accent-2);text-decoration:none;font-weight:600}
+.nav-links a.cta{padding:8px 12px;border-radius:8px;background:transparent;border:1px solid rgba(15,23,36,0.06)}
+.nav-links a:hover{color:var(--accent)}
+
+/* HERO */
+.hero{padding:64px 0}
+.hero-inner{display:grid;grid-template-columns:1fr;gap:28px;align-items:center}
+@media(min-width:980px){ .hero-inner{grid-template-columns: 1fr 420px} }
+
+.hero-left h1{font-size:36px;margin:0;line-height:1.03}
+.hero-sub{color:var(--muted);margin-top:12px;max-width:56ch}
+.hero-ctas{margin-top:18px;display:flex;gap:12px}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+.btn.primary{background:var(--accent);color:white}
+.btn.outline{border:1px solid rgba(15,23,36,0.06);color:var(--accent-2);background:transparent}
+.btn.full{width:100%}
+
+/* quick list */
+.hero-quick{display:flex;gap:14px;margin-top:16px;color:var(--muted);font-size:14px}
+
+/* visual card */
+.visual-card{background:var(--panel);padding:16px;border-radius:12px;border:1px solid rgba(15,23,36,0.04);box-shadow:var(--shadow);display:flex;flex-direction:column;align-items:center;gap:12px}
+.portrait{width:180px;height:180px;border-radius:10px;object-fit:cover}
+
+/* Sections */
+.section{padding:48px 0}
+.section.light{background:var(--panel)}
+.section-title{font-size:24px;margin:0}
+.section-sub{color:var(--muted);margin-top:8px;max-width:60ch}
+
+/* Cards grid */
+.cards{display:grid;grid-template-columns:1fr;gap:18px;margin-top:20px}
+@media(min-width:880px){ .cards{grid-template-columns:repeat(3,1fr)} }
+.card{background:white;border-radius:12px;padding:18px;border:1px solid rgba(15,23,36,0.04);box-shadow:var(--shadow)}
+.card-visual{height:120px;border-radius:8px;background:linear-gradient(180deg,#f3f6fb,#fff);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
+
+/* Service grid */
+.service-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:18px}
+@media(min-width:880px){ .service-grid{grid-template-columns:repeat(3,1fr)} }
+.service{background:white;padding:16px;border-radius:12px;border:1px solid rgba(15,23,36,0.04);box-shadow:var(--shadow)}
+.service-title{font-weight:700}
+.service-desc{color:var(--muted);margin-top:8px}
+.service-price{margin-top:12px;font-weight:800}
+
+/* Writing */
+.write-list{display:grid;gap:12px;margin-top:14px}
+.write-item h4{margin:0}
+
+/* Contact layout */
+.contact-grid{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:980px){ .contact-grid{grid-template-columns: 1fr 320px} }
+
+.contact-card{background:white;padding:18px;border-radius:12px;border:1px solid rgba(15,23,36,0.04);box-shadow:var(--shadow)}
+.contact-form label{display:block;margin-top:12px}
+.contact-form input,.contact-form textarea{
+  width:100%;padding:10px;border-radius:8px;border:1px solid rgba(15,23,36,0.06);margin-top:8px;font-size:15px;
+}
+.contact-form .label{font-weight:700;margin-bottom:6px}
+.quick-contacts .box{background:white;padding:12px;border-radius:10px;border:1px solid rgba(15,23,36,0.04);margin-bottom:12px}
+
+/* Footer */
+.site-footer{padding:36px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(15,23,36,0.04);margin-top:34px}
+
+/* Responsive small tweaks */
+@media(max-width:520px){
+  .hero-left h1{font-size:26px}
+  .nav-links{display:none}
+  .logo{width:40px;height:40px}
+  .portrait{width:140px;height:140px}
+}
