@@ -10,7 +10,7 @@ export default function App() {
           <div className="brand">
             <div className="logo">NC</div>
             <div className="brand-meta">
-              <div className="brand-name">Norse Coder</div>
+              <div className="brand-name">Nitish Pokhriyal</div>
               <div className="brand-tag">Developer · Writer · Digital Experiences</div>
             </div>
           </div>
@@ -18,7 +18,7 @@ export default function App() {
           <nav className="nav-links">
             <a href="#projects">Projects</a>
             <a href="#services">Services</a>
-            <a href="#writing">Writing</a>
+            <a href="#writing">Development</a>
             <a href="#contact" className="cta">Contact</a>
           </nav>
         </div>
