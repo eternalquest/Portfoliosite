@@ -11,7 +11,7 @@ export default function App() {
             <div className="logo">NP</div>
             <div className="brand-meta">
               <div className="brand-name">Nitish Pokhriyal</div>
-              <div className="brand-tag">Developer · Writer · Digital Experiences</div>
+              <div className="brand-tag">Developer · copyWriter2 · Digital Experiences</div>
             </div>
           </div>
 
