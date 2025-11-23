@@ -8,7 +8,7 @@ export default function App() {
       <header className="nav">
         <div className="container nav-inner">
           <div className="brand">
-            <div className="logo">NC</div>
+            <div className="logo">NP</div>
             <div className="brand-meta">
               <div className="brand-name">Nitish Pokhriyal</div>
               <div className="brand-tag">Developer · Writer · Digital Experiences</div>
