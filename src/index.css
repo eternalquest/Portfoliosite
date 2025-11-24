@@ -4,7 +4,8 @@
   --panel: #f7f7f9;
   --muted: #6b7280;
   --text: #0f1724;
-  --accent: #2b6cb0;     /* steel-blue */
+  /*--accent: #2b6cb0;*/     /* steel-blue */
+  --accent:#d41009;
   --accent-2: #0f1724;   /* dark */
   --radius: 12px;
   --container: 1120px;
